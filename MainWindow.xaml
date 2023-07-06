@@ -1,0 +1,161 @@
+﻿<Window x:Class="sillycalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sillycalculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="643" Width="449">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/pepe_toilet.png" Stretch="Uniform" TileMode="None"/>
+        </Grid.Background>
+        <TextBox x:Name ="TxtResult" HorizontalAlignment="Left" Height="75" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="415" TextChanged="TxtResult_TextChanged" FontSize="48" Text="0" TextAlignment="Right" Background="Black" Foreground="White" BorderBrush="Black">
+            <TextBox.OpacityMask>
+                <SolidColorBrush Color="#FF111111" Opacity="0.95"/>
+            </TextBox.OpacityMask>
+        </TextBox>
+        <Button x:Name="Percentage" Content="%" HorizontalAlignment="Left" Height="71" Margin="10,151,0,0" VerticalAlignment="Top" Width="100" Click="OP_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.83"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="C" Content="C" HorizontalAlignment="Left" Height="71" Margin="115,151,0,0" VerticalAlignment="Top" Width="100" Click="C_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.825"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="CE" Content="CE" HorizontalAlignment="Left" Height="71" Margin="220,151,0,0" VerticalAlignment="Top" Width="100" Click="CE_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.83"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Clear" Content="⟵" HorizontalAlignment="Left" Height="71" Margin="325,151,0,0" VerticalAlignment="Top" Width="100" Click="Clear_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.83"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="DivideX" Content="1/x" HorizontalAlignment="Left" Height="71" Margin="10,227,0,0" VerticalAlignment="Top" Width="100" Click="DivideX_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.83"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Sqrt2" Content="x²" HorizontalAlignment="Left" Height="71" Margin="115,227,0,0" VerticalAlignment="Top" Width="100" Click="Sqrt2_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.83"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="SqrtX" Content="√x" HorizontalAlignment="Left" Height="71" Margin="220,227,0,0" VerticalAlignment="Top" Width="100" Click="SqrtX_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.83"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Divide" Content="/" HorizontalAlignment="Left" Height="71" Margin="325,227,0,0" VerticalAlignment="Top" Width="100" Click="OP_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.83"/>
+            </Button.Background>
+        </Button>
+        <Button Content="7" HorizontalAlignment="Left" Height="71" Margin="10,303,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button Content="8" HorizontalAlignment="Left" Height="71" Margin="115,303,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button Content="9" HorizontalAlignment="Left" Height="71" Margin="220,303,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Multiply" Content="*" HorizontalAlignment="Left" Height="71" Margin="325,303,0,0" VerticalAlignment="Top" Width="100" Click="OP_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.83"/>
+            </Button.Background>
+        </Button>
+        <Button Content="4" HorizontalAlignment="Left" Height="71" Margin="10,379,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button Content="5" HorizontalAlignment="Left" Height="71" Margin="115,379,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button Content="6" HorizontalAlignment="Left" Height="71" Margin="220,379,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Minus" Content="-" HorizontalAlignment="Left" Height="71" Margin="325,379,0,0" VerticalAlignment="Top" Width="100" Click="OP_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.83"/>
+            </Button.Background>
+        </Button>
+        <Button Content="1" HorizontalAlignment="Left" Height="71" Margin="10,455,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button Content="2" HorizontalAlignment="Left" Height="71" Margin="115,455,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" FontSize="22" Background="Black" Foreground="White" BorderBrush="White"/>
+        <Button Content="3" HorizontalAlignment="Left" Height="71" Margin="220,455,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Plus" Content="+" HorizontalAlignment="Left" Height="71" Margin="325,455,0,0" VerticalAlignment="Top" Width="100" Click="OP_Click" Foreground="White" FontSize="22" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.83"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="PlusMinus" Content="±" HorizontalAlignment="Left" Height="71" Margin="10,531,0,0" VerticalAlignment="Top" Width="100" Click="PlusMinus_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Zero" Content="0" HorizontalAlignment="Left" Height="71" Margin="115,531,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Dot" Content="," HorizontalAlignment="Left" Height="71" Margin="220,531,0,0" VerticalAlignment="Top" Width="100" Click="Comma_Click" FontSize="22" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Equals" Content="=" HorizontalAlignment="Left" Height="71" Margin="325,531,0,0" VerticalAlignment="Top" Width="100" Click="Equals_Click" FontSize="22" Foreground="Black" BorderBrush="Black">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.83"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="MemoryClear" Content="MC" HorizontalAlignment="Left" Height="56" Margin="10,90,0,0" VerticalAlignment="Top" Width="79" Click="MemoryClear_Click" FontSize="20" Foreground="White" OpacityMask="Black" Opacity="0.9" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.96"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="MemoryRead" Content="MR" HorizontalAlignment="Left" Height="56" Margin="94,90,0,0" VerticalAlignment="Top" Width="79" Click="MemoryRead_Click" FontSize="20" Foreground="White" OpacityMask="Black" Opacity="0.9" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.96"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="MemoryPlus" Content="M+" HorizontalAlignment="Left" Height="56" Margin="178,90,0,0" VerticalAlignment="Top" Width="79" Click="MemoryPlus_Click" FontSize="20" Foreground="White" OpacityMask="Black" Opacity="0.9" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.96"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="MemorySave" Content="M-" HorizontalAlignment="Left" Height="56" Margin="262,90,0,0" VerticalAlignment="Top" Width="79" Click="MemoryMinus_Click" FontSize="20" Foreground="White" Opacity="0.9" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.96"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="MemorySave1" Content="MS" HorizontalAlignment="Left" Height="56" Margin="346,90,0,0" VerticalAlignment="Top" Width="79" Click="MemorySave_Click" FontSize="20" Foreground="White" Opacity="0.9" BorderBrush="White">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.96"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
